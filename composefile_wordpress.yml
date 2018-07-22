@@ -5,6 +5,8 @@ services:
     restart: always
     ports:
       - 8080:80
+    networks:
+      - scripts_default
     environment:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: mystry007
