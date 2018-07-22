@@ -1,0 +1,11 @@
+version: '3'
+services:
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: mystry007
+      WORDPRESS_DB_NAME: wordpressDB
