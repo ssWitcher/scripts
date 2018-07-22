@@ -1,0 +1,15 @@
+version: '3'
+services:
+    db:
+        image: mysql:5.6
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: bond007
+            MYSQL_USER: wordpress
+            MYSQL_PASSWORD: mystry007
+            MYSQL_DATABASE: wordpressDB
+        expose:
+            - "3306"
+        volumes:
+            - /home/saurabh/msqlData:/var/lib/mysql
+
